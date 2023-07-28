@@ -35,6 +35,8 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   final telegram = Telegram('6622522645:AAEzQznIXLr-gFT3pVT5LK8Zlsuthbr8Mzk');
+  late TeleDart teledart;
+  String botName = '';
 
   void _incrementCounter() {
     setState(() {
@@ -56,6 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
+
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
